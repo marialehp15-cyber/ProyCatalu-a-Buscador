@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Juegos - Xbox 360</title>
+    <!-- Enlazamos los estilos de CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="logo-xbox">🟢</div>
+        <h1>Catálogo Xbox 360</h1>
+        <p class="subtitulo">Busca un juego para saber en qué disco está guardado</p>
+        
+        <!-- Caja de texto para buscar -->
+        <label for="buscador">Nombre del juego:</label>
+        <input type="text" id="buscador" placeholder="Ej. Halo, GTA, Gears..." onkeypress="evaluarEnter(event)">
+
+        <!-- Botón para ejecutar la búsqueda -->
+        <button onclick="buscarJuego()">Buscar Ubicación</button>
+
+        <!-- Contenedor donde se mostrará el resultado -->
+        <div id="resultado" class="resultado-oculto">
+            <p id="textoResultado">Ingresa el nombre de un juego para empezar.</p>
+        </div>
+    </div>
+
+    <!-- Enlazamos el archivo de JavaScript al final -->
+    <script src="js/script.js"></script>
+</body>
+</html>
